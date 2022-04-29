@@ -171,7 +171,7 @@ server:
     # Require DNSSEC data for trust-anchored zones, if such data is absent, the
     # zone becomes bogus. If turned off you run the risk of a downgrade attack
     # that disables security for a zone.
-    harden-dnssec-stripped: yes
+    harden-dnssec-stripped: no
 
     # Only trust glue if it is within the servers authority.
     harden-glue: yes
