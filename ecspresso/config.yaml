@@ -1,0 +1,12 @@
+region: ap-northeast-1
+cluster: test
+service: nginx-service
+service_definition: ecs-service-def.jsonnet
+task_definition: ecs-task-def.jsonnet
+timeout: 10m0s
+plugins: []
+appspec: null
+plugins:
+  - name: tfstate
+    config:
+      path: ../terraform/terraform.tfstate
